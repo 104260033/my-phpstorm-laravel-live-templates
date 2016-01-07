@@ -1,0 +1,9 @@
+<templateSet group="Laravel-model">
+  <template name="scope" value="public function scope$NAME$($query)&#10;{&#10;        $query-&gt;$func$&#10;}" description="get controller" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="&quot;Published&quot;" alwaysStopAt="true" />
+    <variable name="func" expression="" defaultValue="&quot;latest('Published_at')-&gt;wherePublishedAt('&gt;='Carbon::Carbon)&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>
